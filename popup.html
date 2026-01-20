@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk Image Downloader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Found Images</h1>
+    <div id="image-count">0 images</div>
+  </header>
+
+  <div class="controls">
+    <button id="select-all" class="secondary">Select All</button>
+    <button id="deselect-all" class="secondary">Deselect All</button>
+  </div>
+
+  <div id="gallery" class="gallery">
+    <!-- Image thumbnails inserted here by JS -->
+    <div class="no-images hidden" id="loading">Scanning page...</div>
+    <div class="no-images hidden" id="empty-state">No large images found.</div>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #ddd; padding-top: 15px;">
+    <button id="download-btn" class="primary" disabled>Download Selected</button>
+    <div id="status-msg"></div>
+  </div>
+
+  <!-- JSZip Library -->
+  <script src="libs/jszip.min.js"></script>
+  <!-- Main Logic -->
+  <script src="popup.js"></script>
+</body>
+</html>

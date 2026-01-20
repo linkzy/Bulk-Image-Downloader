@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Bulk Image Downloader",
+  "version": "1.0",
+  "description": "Download all images from the current tab as a ZIP file.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bulk Image Downloader"
+  }
+}
